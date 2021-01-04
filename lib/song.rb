@@ -7,16 +7,20 @@ class Song
       @name = name
       @artist = artist
       @genre = genre
-  end    
+  end   
   
-      @@song_count = 0 
+  song = Song.new
+song.name = "99 Problems"
+
+  
+      @@count = 0 
 
   def initialize
-    @@song_count += 1
+    @@count += 1
   end
 
   def self.count
-    @@song_count
+    @@count
   end
 
 
